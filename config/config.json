@@ -1,6 +1,10 @@
 {
   "development": {
+<<<<<<< HEAD
     "username": "ujwreyhwejpo1hty",
+=======
+   "username": "ujwreyhwejpo1hty",
+>>>>>>> a3a52d4146e15b57d9d87bc990180bc4375986b7
     "password": "W7HoafU4vpcIFEEGFLpQ",
     "database": "be7wxw9ydu9kufp2r4pi",
     "host": "be7wxw9ydu9kufp2r4pi-mysql.services.clever-cloud.com",
@@ -14,10 +18,17 @@
     "dialect": "mysql"
   },
   "production": {
+<<<<<<< HEAD
     "username": "process.env.DB_USER",
     "password": "process.env.DB_PASSWORD",
     "database": "process.env.DB_DATABASE",
     "host": "process.env.DB_HOST",
+=======
+   "username": "ujwreyhwejpo1hty",
+    "password": "W7HoafU4vpcIFEEGFLpQ",
+    "database": "be7wxw9ydu9kufp2r4pi",
+    "host": "be7wxw9ydu9kufp2r4pi-mysql.services.clever-cloud.com",
+>>>>>>> a3a52d4146e15b57d9d87bc990180bc4375986b7
     "dialect": "mysql"
   }
 }

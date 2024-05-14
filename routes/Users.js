@@ -1,14 +1,15 @@
 const express = require('express')
 const router = express.Router()
 const {Users, Posts, Likes} = require('../models')
-const bcrypt = require('bcrypt')
+const bcrypt = require('bcryptjs')
 const jwt = require('jsonwebtoken')
 const {validateToken} = require('../middlewares/AuthMiddleware')
 
 router.post('/', async (request, response) => {
     const { username, password} = request.body
 
-    const hashedPassword = await bcrypt.hash(password, 10)
+    const salt = await bcrypt.genSalt(10)
+    const hashedPassword = await bcrypt.hash(password, salt)
 
     const user = await Users.findOne({
         where: {

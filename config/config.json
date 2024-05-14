@@ -1,9 +1,9 @@
 {
   "development": {
-    "username": "root",
-    "password": "Swaroop@2001",
-    "database": "projectdb",
-    "host": "localhost",
+    "username": "ujwreyhwejpo1hty",
+    "password": "W7HoafU4vpcIFEEGFLpQ",
+    "database": "be7wxw9ydu9kufp2r4pi",
+    "host": "be7wxw9ydu9kufp2r4pi-mysql.services.clever-cloud.com",
     "dialect": "mysql"
   },
   "test": {
@@ -14,10 +14,10 @@
     "dialect": "mysql"
   },
   "production": {
-    "username": "root",
-    "password": null,
-    "database": "projectdb",
-    "host": "127.0.0.1",
+    "username": "process.env.DB_USER",
+    "password": "process.env.DB_PASSWORD",
+    "database": "process.env.DB_DATABASE",
+    "host": "process.env.DB_HOST",
     "dialect": "mysql"
   }
 }

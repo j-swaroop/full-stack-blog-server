@@ -20,8 +20,9 @@ app.use("/auth", usersRoute)
 const likesRouter = require('./routes/Likes')
 app.use('/likes', likesRouter)
 
+let port = process.env.PORT || 3001
 db.sequelize.sync().then(() => {
-    app.listen(process.env.PORT || 3001, () => {
+    app.listen(port, () => {
         console.log('Server running on Port 3001');
     })
 }).catch((err) => {
